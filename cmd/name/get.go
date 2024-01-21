@@ -39,7 +39,7 @@ var getCmd = &cobra.Command{
 		return nil
 	},
 	RunE: func(cmd *cobra.Command, args []string) error {
-		if !format.IsRepositoryValid(repository) {
+		if !format.IsRepositoryValid("golang/go") {
 			return errors.New("Repository flag is required")
 		}
 
@@ -48,12 +48,12 @@ var getCmd = &cobra.Command{
 		switch detail {
 		case "stars":
 			{
-				starsCount, err := api.GetStarsCount(repository)
+				starsCount, err := api.GetStarsCount("golang/go")
 				if err != nil {
 					return errors.New("Could not get stars count for this repository: " + err.Error())
 				}
 
-				fmt.Println(repository + " has " + fmt.Sprint(*starsCount) + " stars")
+				fmt.Println("golang/go" + " has " + fmt.Sprint(*starsCount) + " stars")
 			}
 		}
 
