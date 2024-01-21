@@ -152,10 +152,4 @@ winget:
         # Templates: allowed
         private_key: '{{ .Env.PRIVATE_KEY_PATH }}'
 
-        # The value to be passed to `GIT_SSH_COMMAND`.
-        # This is mainly used to specify the SSH private key used to pull/push
-        # to the Git URL.
-        #
-        # Default: 'ssh -i {{ .KeyPath }} -o StrictHostKeyChecking=accept-new -F /dev/null'
-        # Templates: allowed
-        ssh_command: 'ssh -i {{ .Env.KEY }} -o SomeOption=yes'
+      
