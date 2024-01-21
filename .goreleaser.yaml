@@ -94,7 +94,7 @@ winget:
       # Repository name.
       #
       # Templates: allowed
-      name: cli_test
+      name: cli_test_release
 
       # Optionally a branch can be provided.
       #
