@@ -59,7 +59,7 @@ winget:
     #
     # Templates: allowed
     # Required.
-    publisher: Foo Inc
+    publisher: TheRiverBank
 
     # Your app's description.
     #
@@ -127,7 +127,7 @@ winget:
         # Since: v1.19
         base:
           owner: goreleaser
-          name: my-repo
+          name: cli_test
           branch: main
       # Clone, create the file, commit and push, to a regular Git repository.
       #
